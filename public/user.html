@@ -95,13 +95,12 @@
 
 
 
-
-  <div class="text-warning mb-3">
-    <h1 id="scores"><span style=" float: left; margin-left: 25%;">X: 0 </span> <span
-        style=" float: right; margin-right: 25%;">O: 0</span></h1>
+  <div id="scores" class="text-warning mb-3">
+    <h1><span style=" float: left; margin-left: 25%;">X: 0 </span> <span style=" float: right; margin-right: 25%;">O:
+        0</span></h1>
   </div>
 
-  <div class="text-center mt-2 " id="all">
+  <div class="text-center mt-2 " id="board">
     <h1 class="display-4 text-white text-center mb-2" id="turn">It's "X" Turn</h1>
 
     <button class="input xo" id="a"> </button>
@@ -127,8 +126,9 @@
   </div>
 
   <div class="text-center">
-    <button id="reset" class="input">Replay</button>
-    <button id="newGame" class="input">New Game</button>
+    <button id="resetOnline" class="input">Replay</button>
+    <button id="reset" style="display: none;" class="input">Replay</button>
+    <button id="newGame" style="display: none;" class="input">New Game</button>
   </div>
 
   <!-- The core Firebase JS SDK is always required and must be listed first -->
@@ -172,6 +172,8 @@
     crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
+  <script src="scripts/xo-helper.js"></script>
+  <script src="scripts/onlineHelper.js"></script>
   <script src="scripts/user.js"></script>
 
 

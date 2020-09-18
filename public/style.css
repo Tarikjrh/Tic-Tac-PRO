@@ -27,7 +27,7 @@ button:disabled{
 .won{
      background-color: #eeeeee
 }
-button#reset,button#newGame{
+button#reset,button#newGame,button#resetOnline{
     background-color:grey;
     color:  white;
     font-size: 3vh;

@@ -8,7 +8,6 @@ function renderBoard(ar) {
 
     document.getElementById("scores").innerHTML = `
     <h1><span  style=" float: left; margin-left: 25%;">X: ${scoreBoard[0]} </span> <span style=" float: right; margin-right: 25%;">O: ${scoreBoard[1]}</span></h1>
-
     `
 }
 
@@ -38,16 +37,19 @@ function isWon(ar, player) {
             document.getElementById(y[x[i][0]]).style.backgroundColor = "#eeeeee";
             document.getElementById(y[x[i][1]]).style.backgroundColor = "#eeeeee";
             document.getElementById(y[x[i][2]]).style.backgroundColor = "#eeeeee";
-            document.querySelector("#turn").innerHTML = ` <h1  class="display-1 text-danger"> "${player}" Won !</h1>`
 
             //prevent players to keep playing once someone wins
             disableAll()
 
             //update the score board once someone wins
             scoreBoard[players.indexOf(player)]++
-        }
-    }
+            document.querySelector("#turn").innerHTML = ` <h1  class="display-1 text-danger"> "${player}" Won !</h1>`
 
+            return true
+        }
+
+
+    }
 
 
 }
@@ -99,10 +101,6 @@ function resetGame() {
     document.querySelector("#turn").innerHTML = ` It's  "${player}" Turn !`
 
 
-
-
-
-
 }
 
 
@@ -138,3 +136,7 @@ function enableBtnsAll() {
 
 
 }
+
+
+
+
