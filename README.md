@@ -1,5 +1,5 @@
 # Tic-Tac-PRO
-<h1>Unbetable tic-tac-toe, with the option to play against friends online and offline</h1>
+<h3>Unbeatable tic-tac-toe, with the option to play against friends online and offline</h3>
 
 
 This is the ultimate Tic Tac Toe project.
